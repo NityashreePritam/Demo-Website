@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    /* font-family: 'Roboto', sans-serif;   
+    font-family: 'Lobster 2', cursive; */
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.7rem;
+    position : sticky;
+    top:0;
+}
+.logo{
+    font-family: 'Lobster Two', cursive;
+}
+.navbar ul{
+    text-decoration: none;
+    display:flex;
+}
+.navbar ul li {
+    list-style: none;
+}
+.navbar ul li a{
+    color:white;
+    text-decoration: none;
+    padding:1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar ul li a:hover{
+    color:#00a8ad;
+}
+.color-text{
+    color:cyan;
+}
+
+/* #################################################### Header Styling ########################################## */
+/* .header{
+    position:relative;
+} */
+/* .header img{
+    position:absolute;
+    width:100%;
+    height:95vh;
+    z-index:-1;
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size:cover;
+    background:rgba(0,0,0,0.2)
+ 
+}  */
+/* .header div{
+  color:white;
+
+  z-index:3;
+} */
+
+.header{
+    background:url('../image/Citi.jpg');
+    height:95vh;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.header div{
+    color:white;
+    background:rgba(0,0,0,0.5);
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+    align-items:center;
+    padding:20px;
+}
+
+.header div h1{
+    font-family: 'Lobster Two', cursive;
+}
+.heading{
+    font-size: 2.5rem;
+    margin: 0.5rem;
+}
+.header div p{
+    font-family: 'Roboto', sans-serif;   
+}
+
+.btn{
+    padding:10px;
+    border-radius: 15px;
+    width:7rem;
+    border:none;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;   
+}
+.p-text1{
+    font-size: 1rem;
+    max-width: 900px;
+    margin:1rem;
+}
+.btn:hover{
+    background-color:#00a8ad;
+}
+
+
+/* ################################################ Service Styling ############################################# */
+#Services{
+    display:flex;
+    flex:1;
+}
+.container{
+    margin:10px auto;
+    width:70rem;
+
+}
+.Service-h3{
+    font-family: 'Roboto', sans-serif;  
+    margin-bottom: .3rem; 
+}
+.cards-p{
+    font-size:1rem;
+    margin: 10 auto;
+}
+.cards{
+    text-align: center;
+    padding:1.5rem;
+}
+i{
+    margin-bottom: .5rem;
+}
+.cards i{
+    background-color: #6eaaad;
+    padding:2rem;
+    border-radius:4rem;
+}
+
+/* ############################################## About Styling  ######################################### */
+#About{
+    background:url('../image/Citi_Image.jpg');
+    height:70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+}
+
+#About div{
+    background-color:rgba(0,0,0,0.5);
+    height:100%;
+}
+.About-h1{
+    color:white;
+    text-align: right;
+    padding:4.5rem 7rem 0 48rem;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.About-p{
+    color:white;
+    text-align: right;
+    padding:1rem 7rem 0 48rem;
+    font-family: 'Roboto', sans-serif;
+}
+.About-btn{
+    margin:1rem 6rem 0 66.6rem;
+    padding:.5rem;
+    border-radius:1rem;
+
+}
+.About-btn:hover{
+    background:salmon;
+}
+
+/* ########################################################## Contact Styling ################################## */
+#img{
+    background:url('../image/Contact.png');
+    height:100vh;
+    background-size:cover ;
+    background-position: no-repeat;
+    height: 25rem;
+    width:43rem;
+}
+.form{
+    text-align: right;
+    margin-left:40rem;
+    margin-top:4.5rem;
+}
+input{
+    height:3.5ren;
+    width:30rem;
+    border:5px solid #4e8598;
+}
+.f-h1{
+    font-size: 2.5rem;
+    color:#00a8ad;
+    font-family: 'Roboto', sans-serif;   
+    text-align: right;
+    margin-top:0.9rem;
+   
+}
+label{
+    font-size: 1rem;
+    color:black;
+    font-family: 'Roboto', sans-serif;   
+}
+.f-btn{
+    background-color:#00a8ad;
+    padding:0.5rem;
+    border-radius: 15px;
+    margin-top:1rem;
+    width:5.5rem;
+    color:white;
+}
+
+
+/* ################################################## Footer Styling #################################### */
+
+#footer{
+   
+    text-align: center;
+    font-size: 0.5rem;
+    padding:0.7rem;
+    font-weight: 500;
+    color:#fff;
+    background: rgb(65,65,65);
+    
+}
+

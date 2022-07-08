@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/7bd46afd64.js" crossorigin="anonymous"></script>
+
+    <title>CitiSite</title>
+</head>
+<body>
+    <nav class = "navbar">
+        <h1 class="logo"><span class="color-text">Citi</span> Site</h1>
+        <ul>
+           <li><a href="#Home">Home</a></li>
+           <li><a href="#About">About</a></li>
+           <li><a href="#Services">Service</a></li> 
+           <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header class='header' id="Home">
+        <!-- <img src="./image/Citi.jpg" alt=""> -->
+        <div>
+            <h1 class = "heading">Welcome to LasVegas</h1>
+            <p class="p-text1">Las Vegas has always been considered the playground of the United States. It is where people go when they want to have fun, party, and let loose. Las Vegas is filled with casinos, nightclubs, restaurants, bars, lounges, and so much more. Everything about Las Vegas is amazing because the entire city sparkles.</p><br>
+            <button class="btn">Explore</button>
+        </div>
+    </header>
+    <section id="Services" class="container">
+        <div class="cards">
+            <i class="fa-solid fa-user-group fa-3x"></i>
+            <h3 class="Service-h3">Creative Team</h3>
+            <p class="cards-p">The main goal of a creative team is to design and execute campaigns that encourage a target audience to buy a company's products or services. The team is also responsible for creating a consistent brand image for the company through its look, voice, and messaging.</p>
+        </div>
+
+        <div class="cards">
+            <i class="fa-solid fa-screwdriver-wrench fa-3x"></i>
+            <h3 class="Service-h3">Creative Team</h3>
+            <p class="cards-p">
+                A product or service description might be defined as the copy or content used to describe a value proposition to potential customers. And Our group provide the best Service to the Customer.</p>
+        </div>
+
+        <div class="cards">
+            <i class="fa-solid fa-headset fa-3x"></i>
+            <h3 class="Service-h3">24x7 Customer Support</h3>
+            <p class="cards-p">24/7 monitoring means that someone is always managing your security. Your data is being protected 24 hours a day, 7 days a week, 365 days a year..</p>
+        </div>
+    </section>
+
+    <section id="About">
+        <div class="About">
+            <h1 class="About-h1">Here You Can Read About Our Company CitiSite.</h1>
+            <p Class="About-p">CitiSite Pvt. Ltd. in Bhubaneshwar GPO, Bhubaneshwar is known to satisfactorily cater to the demands of its customer base. The business came into existence in 2010 and has, since then, been a known name in its field.Customer centricity is at the core of CitiSite Pvt. Ltd.in Bhubaneshwar GPO, Bhubaneshwar and it is this belief that has led the business to build long-term relationships. </p>
+            <button Class="About-btn">Know More</button>
+        </div>
+    </section>
+    <section id="Contact">
+        <div class="Contact-div" id="img">
+            <h1 class = "f-h1">Contact Us</h1>
+            <div class="form">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="name"><br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email"><br>
+                    <label for="number">Phone</label>
+                    <input type="number" name="number"><br>
+                    <button class="f-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <h2>CitiSite Pvt. Ltd. &copy; 2022,All Rights Reserved.Nityashree</h2>
+    </footer>
+
+    <!-- ################## JvaScript Code for Smooth Scrolling ################################# -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>
